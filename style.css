@@ -4,8 +4,13 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    padding: 20px;
     border-radius: 8px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 10px auto;
 }
 input[type="checkbox"] {
     opacity: 100;
