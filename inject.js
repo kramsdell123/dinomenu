@@ -4,7 +4,8 @@ function main() {
     .then(html=>{
         const container = document.createElement("div");
         container.innerHTML = html;
-        document.body.appendChild(container);
+        container.id = "hack-menu";
+        document.body.append(container);
     });
     fetch("https://raw.githubusercontent.com/kramsdell123/dinomenu/main/main.js")
     .then(response=>response.text())
