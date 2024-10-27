@@ -1,0 +1,12 @@
+#hack-menu {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 8px;
+}
+input[type="checkbox"] {
+    opacity: 100;
+}
