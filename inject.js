@@ -7,9 +7,6 @@ function main() {
         container.id = "hack-menu";
         document.body.append(container);
     });
-    fetch("https://raw.githubusercontent.com/kramsdell123/dinomenu/main/main.js")
-    .then(response=>response.text())
-    .then(code=>eval(code));
     fetch("https://raw.githubusercontent.com/kramsdell123/dinomenu/main/style.css")
     .then(response=>response.text())
     .then(css=>{
@@ -17,6 +14,9 @@ function main() {
         container.innerHTML = css;
         document.head.append(container);
     });
+    fetch("https://raw.githubusercontent.com/kramsdell123/dinomenu/main/main.js")
+    .then(response=>response.text())
+    .then(code=>eval(code));
 }
 function checks() {
     if(typeof Runner === "undefined") {
